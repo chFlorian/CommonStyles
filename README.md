@@ -1,3 +1,3 @@
-# SwiftUIButtonStyles
+# CommonStyles
 
-A description of this package.
+A collection of commonly usable ButtonStyles, ToggleStyles, ViewModifiers by Florian Schweizer.
