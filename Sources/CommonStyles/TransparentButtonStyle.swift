@@ -11,6 +11,11 @@ public struct TransparentRoundedButtonStyle: ButtonStyle {
     public let activeColor: Color
     public let passiveColor: Color
     
+    public init(activeColor: Color, passiveColor: Color) {
+        self.activeColor = activeColor
+        self.passiveColor = passiveColor
+    }
+    
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)

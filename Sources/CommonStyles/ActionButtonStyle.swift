@@ -53,6 +53,11 @@ public struct ActionButtonStyle: ButtonStyle {
 
     public var actionType: Action
     public var withImage: Bool = true
+    
+    public init(actionType: Action, withImage: Bool = true) {
+        self.actionType = actionType
+        self.withImage = withImage
+    }
 
     public func makeBody(configuration: Configuration) -> some View {
         HStack {

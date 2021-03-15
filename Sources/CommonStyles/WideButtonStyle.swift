@@ -12,6 +12,12 @@ public struct WideButtonStyle: ButtonStyle {
     public var useDarkerColor = false
     public var darkerColor: Color = Color.gray.opacity(0.4)
     
+    public init(isDestructive: Bool = false, useDarkerColor: Bool = false, darkerColor: Color = Color.gray.opacity(0.4)) {
+        self.isDestructive = isDestructive
+        self.useDarkerColor = useDarkerColor
+        self.darkerColor = darkerColor
+    }
+    
     public func makeBody(configuration: Configuration) -> some View {
         HStack {
             Spacer()

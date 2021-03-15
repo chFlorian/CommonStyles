@@ -11,6 +11,11 @@ public struct RoundedButtonStyle: ButtonStyle {
     public let primaryColor: Color
     public let secondaryColor: Color
     
+    public init(primaryColor: Color, secondaryColor: Color) {
+        self.primaryColor = primaryColor
+        self.secondaryColor = secondaryColor
+    }
+    
     public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
