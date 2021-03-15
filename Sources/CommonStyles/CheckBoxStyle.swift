@@ -4,10 +4,11 @@
 //
 //  Created by florian schweizer on 10.11.20.
 //
+
 import SwiftUI
 
-struct CheckboxStyle: ToggleStyle {
-    let primaryColor: Color
+public struct CheckboxStyle: ToggleStyle {
+    public let primaryColor: Color
  
     func makeBody(configuration: Self.Configuration) -> some View {
         HStack {

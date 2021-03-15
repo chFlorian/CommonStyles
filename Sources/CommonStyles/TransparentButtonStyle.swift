@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TransparentRoundedButtonStyle: ButtonStyle {
-    let activeColor: Color
-    let passiveColor: Color
+public struct TransparentRoundedButtonStyle: ButtonStyle {
+    public let activeColor: Color
+    public let passiveColor: Color
     
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label

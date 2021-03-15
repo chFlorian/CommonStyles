@@ -10,8 +10,8 @@ import UIKit
 
 @available(iOS 14.0, *)
 
-struct ActionButtonStyle: ButtonStyle {
-    enum Action {
+public struct ActionButtonStyle: ButtonStyle {
+    public enum Action {
         case confirm, cancel, delete
 
         var bgColor: Color {
@@ -51,10 +51,10 @@ struct ActionButtonStyle: ButtonStyle {
         }
     }
 
-    var actionType: Action
-    var withImage: Bool = true
+    public var actionType: Action
+    public var withImage: Bool = true
 
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         HStack {
             if withImage {
                 actionType.image

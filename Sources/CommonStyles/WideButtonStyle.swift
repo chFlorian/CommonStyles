@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct WideButtonStyle: ButtonStyle {
-    var isDestructive = false
-    var useDarkerColor = false
-    var darkerColor: Color = Color.gray.opacity(0.4)
+public struct WideButtonStyle: ButtonStyle {
+    public var isDestructive = false
+    public var useDarkerColor = false
+    public var darkerColor: Color = Color.gray.opacity(0.4)
     
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         HStack {
             Spacer()
             

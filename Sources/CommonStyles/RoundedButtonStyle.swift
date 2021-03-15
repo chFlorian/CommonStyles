@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct RoundedButtonStyle: ButtonStyle {
-    let primaryColor: Color
-    let secondaryColor: Color
+public struct RoundedButtonStyle: ButtonStyle {
+    public let primaryColor: Color
+    public let secondaryColor: Color
     
-    func makeBody(configuration: Self.Configuration) -> some View {
+    public func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
             .frame(minWidth: 0, maxWidth: .infinity)
             .padding()

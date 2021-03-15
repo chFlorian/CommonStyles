@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func transparentBox(_ opacity: Double = 0.2) -> some View {
+    public func transparentBox(_ opacity: Double = 0.2) -> some View {
         self
             .padding()
             .frame(maxWidth: .infinity)
@@ -19,7 +19,7 @@ extension View {
             )
     }
     
-    func transparentBoxWithShadow(_ opacity: Double = 0.2, shadowRadius: CGFloat = 10) -> some View {
+    public func transparentBoxWithShadow(_ opacity: Double = 0.2, shadowRadius: CGFloat = 10) -> some View {
         self
             .padding()
             .frame(maxWidth: .infinity)
