@@ -10,7 +10,7 @@ import SwiftUI
 public struct CheckboxStyle: ToggleStyle {
     public let primaryColor: Color
  
-    func makeBody(configuration: Self.Configuration) -> some View {
+    public func makeBody(configuration: Self.Configuration) -> some View {
         HStack {
             configuration.label
  
