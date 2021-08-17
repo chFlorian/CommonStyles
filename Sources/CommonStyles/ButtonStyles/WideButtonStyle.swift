@@ -23,7 +23,7 @@ public struct WideButtonStyle: ButtonStyle {
             Spacer()
             
             configuration.label
-                .foregroundColor(.primary)
+                .foregroundColor(Color(.systemBackground))
                 .font(Font.body.weight(.semibold))
             
             Spacer()
