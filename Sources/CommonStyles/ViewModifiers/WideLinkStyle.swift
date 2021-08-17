@@ -12,6 +12,12 @@ struct WideLinkStyle: ViewModifier {
     private let color: Color
     private let cornerRadius: CGFloat
     
+    public init(isDestructive: Bool, color: Color, cornerRadius: CGFloat) {
+        self.isDestructive = isDestructive
+        self.color = color
+        self.cornerRadius = cornerRadius
+    }
+    
     func body(content: Content) -> some View {
         HStack {
             Spacer()
