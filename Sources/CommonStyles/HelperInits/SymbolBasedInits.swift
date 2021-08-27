@@ -14,7 +14,7 @@ extension Link where Label == HStack<TupleView<(Image, Text, Spacer)>> {
                 Image(systemName: symbol)
                 Text(title)
                 Spacer()
-            } as! Label
+            }
         })
     }
 }
@@ -26,7 +26,7 @@ extension NavigationLink where Label == HStack<TupleView<(Image, Text, Spacer)>>
                 Image(systemName: symbol)
                 Text(title)
                 Spacer()
-            } as! Label
+            }
         }
     }
 }
@@ -38,7 +38,7 @@ extension Button where Label == HStack<TupleView<(Image, Text, Spacer)>> {
                 Image(systemName: symbol)
                 Text(title)
                 Spacer()
-            } as! Label
+            }
         }
     }
 }
