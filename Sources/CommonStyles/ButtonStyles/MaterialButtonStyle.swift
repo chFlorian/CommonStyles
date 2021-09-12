@@ -35,3 +35,23 @@ public struct MaterialButtonStyle: ButtonStyle {
         )
     }
 }
+
+@available(iOS 15.0, *)
+extension View {
+    func materialStyle(_ material: Material = .regular, cornerRadius: CGFloat = 10) -> some View {
+        HStack {
+            Spacer()
+            
+            self
+                .foregroundColor(.primary)
+                .font(Font.body.weight(.semibold))
+            
+            Spacer()
+        }
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .foregroundStyle(material)
+        )
+    }
+}
